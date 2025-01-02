@@ -1,0 +1,10 @@
+###IP Integrator Design flow:
+	1. Click "IP Catalog" in "PROJECT MANAGER".
+	2. Right click an empty space in "IP Catalog" window, then click "IP Settings…".
+	3. In "Settings --> IP --> Repository" add the target ip folder (…target folder\ip) from Simulink design, then click OK.
+	4. In "IP Catalog" window, search the ip you want to add, then double click on the ip, follow "Ok", "Generate" procedures to add the ip block to current project sources.
+	5. Select the IP block in Design sources, in "IP INTEGRATOR", click "Create Block Design". Enter "Design name" and click Ok.
+	6. In the Diagram canva add the ip block, it will add a ip block symbol with connections to the outside.
+	7. In "Design" tab, open the nets, and right click on every nets, then create ports for every pin.
+	8. After creating ports, click "Generate Block Design". It will generate a (.bd) file.
+	9. Right click on "project_xxx.bd" file in Design Sources, and click "Create HDL Wrapper", it will create a top level entity for your IP. Or, add a source file from the ip files, the source file called "name_bd_wrapper.vhd". It will create a top level entity for your IP. 
